@@ -20,7 +20,7 @@ Parameters:
     Type: String
     MaxLength: '50'
     MinLength: '3'
-    ConstraintDescription: Please input your full name.
+    ConstraintDescription: Abdelmonem Aly.
 
 Resources:
 
@@ -152,7 +152,7 @@ Resources:
     SAelb:
       Type: AWS::ElasticLoadBalancing::LoadBalancer
       Properties:
-        Subnets: [!Ref 'PublicSubnetB']
+        Subnets: [!Ref 'PublicSubnetA']
         Instances: [!Ref 'SAInstance1']
         SecurityGroups: [!Ref 'SASGELB']
         Listeners:
